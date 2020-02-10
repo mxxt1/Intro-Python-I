@@ -10,7 +10,10 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-print(sys.argv)
+# print('\n',dir(sys.argv))
+
+for line in dir(sys.argv):
+    print(line)
 
 
 # Print out the OS platform you're using:
