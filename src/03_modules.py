@@ -12,7 +12,7 @@ import sys
 # YOUR CODE HERE
 # print('\n',dir(sys.argv))
 
-for line in dir(sys.argv):
+for line in sys.argv:
     print(line)
 
 
