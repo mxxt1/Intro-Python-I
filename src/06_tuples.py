@@ -41,7 +41,7 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 #         print(val)
 
 def print_tuple(t):
-    for ind,val in enumerate(t):
+    for val in t:
         print(val)
 
 t = (1, 2, 5, 7, 99)
