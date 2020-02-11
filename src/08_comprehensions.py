@@ -32,11 +32,11 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-#! this should work... returns syntax error at ].
-# y = [x.upper() for x in a]
+# ! this should work... returns syntax error at ].
+y = [x.upper() for x in a]
 
 # this does the same thing, but works?
-y = [a[x].upper() for x in range(len(a))]
+# y = [a[x].upper() for x in range(len(a))]
 
 # for x in range(len(a)):
 #    y.append(a[x].upper())
