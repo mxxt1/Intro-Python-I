@@ -54,6 +54,7 @@ waypoints.append(newEntry)
 # YOUR CODE HERE
 
 waypoints[0]["name"] = "not a real place"
+waypoints[0]["lon"] = -130
 
 # print(waypoints)
 
