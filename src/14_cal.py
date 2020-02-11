@@ -40,7 +40,7 @@ if (len(sys.argv) > 3):
 elif (len(sys.argv) == 3):
       calendar_date(sys.argv[1], sys.argv[2])
 elif (len(sys.argv) == 2):
-      calendar.date(sys.argv[1])
+      calendar_date(month = sys.argv[1])
 else: 
   calendar_date()
 
