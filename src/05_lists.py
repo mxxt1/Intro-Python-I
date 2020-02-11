@@ -47,4 +47,4 @@ print(len(x))
 # YOUR CODE HERE
 
 for item in x:
-    print(item)
+    print((item*1000))
