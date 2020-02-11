@@ -15,7 +15,7 @@ class LatLon:
 
 # YOUR CODE HERE
 
-
+# pass LatLong to Waypoint
 class Waypoint(LatLon): 
     def __init__(self,name,lat,lon):
         
@@ -29,14 +29,14 @@ class Waypoint(LatLon):
 # `size`, `lat`, and `lon` to the constructor. What should it inherit from?
 
 # YOUR CODE HERE
-
+# pass Waypoint to Geocache
 class Geocache(Waypoint):
     def __init__(self,name,difficulty,size,lat,lon):
         # self.name = name
         self.difficulty=difficulty
         self.size=size
         super().__init__(name,lat,lon)
-
+# construct string with literals
     def __str__(self):
         return f'Geocache(name={self.name},difficulty={self.difficulty},size={self.size},lat={self.lat},lon={self.lon})'
 

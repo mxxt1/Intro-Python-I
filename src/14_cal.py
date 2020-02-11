@@ -31,3 +31,16 @@ import sys
 import calendar
 from datetime import datetime
 
+def calendar_date(month=datetime.now().month, year=datetime.now().year):
+      print(calendar.month(int(year), (int(month))))
+
+
+if (len(sys.argv) > 3):
+      print("Please enter only a month and a year")
+elif (len(sys.argv) == 3):
+      calendar_date(sys.argv[1], sys.argv[2])
+elif (len(sys.argv) == 2):
+      calendar.date(sys.argv[1])
+else: 
+  calendar_date()
+
