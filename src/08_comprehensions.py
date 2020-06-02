@@ -32,7 +32,7 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-# ! this should work... returns syntax error at ].
+
 y = [x.upper() for x in a]
 
 # this does the same thing, but works?

@@ -11,13 +11,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
-fooFile = open('foo.txt', 'r')
-
-for line in fooFile:
-    print(line, end='')
-
-
-fooFile.close()
+# test
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -26,12 +20,18 @@ fooFile.close()
 
 # YOUR CODE HERE
 
-barFile = open('bar.txt','w+')
+# barFile = open('bar.txt','w+')
 
+# for i in range(3):
+#     barFile.write("This is an arbitrary line of content number %i\n" %(i))
+
+
+# barFile.close()
+
+f = open('bar.txt', 'r+')
 for i in range(3):
-    barFile.write("This is an arbitrary line of content number %i\n" %(i))
-
-
-barFile.close()
-
-
+    f.write(str(input("user input here: ")+"\n"))
+f.closed
+with open('bar.txt', 'r+') as z:
+    read_data1 = z.read()
+    print(read_data1)
