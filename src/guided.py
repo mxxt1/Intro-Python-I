@@ -68,3 +68,71 @@ names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy", "shawn"]
 
 s_names = [name.capitalize() for name in names if name[0].lower() == "s" ]
 print(s_names)
+
+#Dictionaries
+# otherwise known as maps/hashmaps/objects
+#{key:value} data structure
+
+new_dict = {}
+
+#create a dictionary with some keys and values
+
+food_dictionary = {
+    'apple': 'is a fruit',
+    'carrot': 'is a vegetable'
+}
+
+print(food_dictionary)
+
+food_dictionary['cucumber'] = 'is a vegetable'
+
+print(food_dictionary)
+
+chosen_food = 'apple'
+
+print(food_dictionary[chosen_food])
+
+#iterate through the keys and values in a dictionary
+# for element in dict, do some code
+
+for key,value in food_dictionary.items():
+    print(f'{key} : {value}')
+
+# checking if something exists in a dictionary
+# ex: is apple in food_dictionary?
+
+print('apple' in food_dictionary)
+
+if 'apple' in food_dictionary.keys():
+    print('yes')
+
+
+# tuples and sets
+# tuple is a collection of a couple of elements 
+
+tup = (1,2,3,4)
+print(tup)
+
+for num in tup:
+    print(num)
+
+print(tup[1])
+
+# Sets are basically dictionaries without values
+# SETS ARE UNORDERED --> there is no index
+
+fruit = {'cucumber', 'apple', 'banana'}
+
+for item in fruit:
+    print(item)
+
+if 'cucumber' in fruit:
+    print("I don't think cucumber is a fruit")
+
+
+
+
+
+
+
+
