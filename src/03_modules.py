@@ -10,7 +10,6 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-# print('\n',dir(sys.argv))
 
 for line in sys.argv:
     print(line)
@@ -26,8 +25,6 @@ print(platform.system())
 # YOUR CODE HERE
 
 print(sys.version)
-
-
 
 
 import os

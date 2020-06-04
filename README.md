@@ -1,3 +1,4 @@
+testing git setup on mac
 # Intro to Python I
 
 It's time to learn a new language! Python!
